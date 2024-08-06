@@ -97,9 +97,13 @@ Comprehensive documentation will be created to guide users through the deploymen
 The user guide will provide step-by-step instructions on how to use the Flask web interface to manage Docker containers across the multicloud Swarm cluster. It will include tutorials on starting containers, scaling services, and monitoring cluster performance.
 
 ###### 3.7.2 Deployment Documentation
-Deployment documentation will detail the process of setting up the multicloud infrastructure, configuring Docker Swarm, and deploying the Flask web interface. It will include information on how to customize the Terraform configuration files for different cloud providers and how to handle common
+Deployment documentation will detail the process of setting up the multicloud infrastructure, configuring Docker Swarm, and deploying the Flask web interface. It will include information on how to customize the Terraform configuration files for different cloud providers and how to handle common deployment issues.
 
- deployment issues.
+##### 3.8 Architecture Diagram
+
+![image](https://github.com/user-attachments/assets/457e3111-59a1-4004-81b2-e0e96619f4bd)
+
+Here is the architecture diagram for the multicloud one-click app that deploys and manages Docker Swarm clusters. The diagram illustrates the flow from the user interface, through the Flask web application, and down to the multicloud infrastructure provisioned by Terraform, with Docker Swarm clusters running across AWS, Google Cloud, and Azure. Each cloud provider hosts instances that act as Docker Swarm managers and workers, with cross-cloud communication enabled for orchestration
 
 #### 4. Expected Outcomes
 The expected outcomes of this research include:
@@ -119,8 +123,4 @@ This research proposal outlines the development of a multicloud one-click applic
 
 This research proposal outlines a comprehensive approach to developing a multicloud one-click application for Docker Swarm cluster management, providing a solid foundation for further development and implementation.
 
-![image](https://github.com/user-attachments/assets/457e3111-59a1-4004-81b2-e0e96619f4bd)
-
-
-Here is the architecture diagram for the multicloud one-click app that deploys and manages Docker Swarm clusters. The diagram illustrates the flow from the user interface, through the Flask web application, and down to the multicloud infrastructure provisioned by Terraform, with Docker Swarm clusters running across AWS, Google Cloud, and Azure. Each cloud provider hosts instances that act as Docker Swarm managers and workers, with cross-cloud communication enabled for orchestration
 
